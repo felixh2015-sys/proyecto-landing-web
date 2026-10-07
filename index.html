@@ -1,413 +1,367 @@
 <!DOCTYPE html>
-
-<html class="dark" lang="es"><head>
+<html lang="es">
+<head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Distribuidora JBV 16 | Equipamiento Táctico de Precisión</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "primary-fixed-dim": "#ffb693",
-                        "outline-variant": "#44474e",
-                        "surface-dim": "#10141a",
-                        "tertiary": "#c6c6c7",
-                        "on-secondary-fixed": "#001b3d",
-                        "surface-container-lowest": "#0a0e14",
-                        "secondary-container": "#304972",
-                        "on-error-container": "#ffdad6",
-                        "background": "#10141a",
-                        "on-primary": "#561f00",
-                        "error": "#ffb4ab",
-                        "tertiary-container": "#343636",
-                        "on-surface-variant": "#c4c6cf",
-                        "primary-container": "#5f2300",
-                        "surface-container-highest": "#31353c",
-                        "error-container": "#93000a",
-                        "primary": "#ffb693",
-                        "surface-bright": "#353940",
-                        "surface-container": "#1c2026",
-                        "inverse-primary": "#a04100",
-                        "on-secondary-fixed-variant": "#2e476f",
-                        "on-secondary": "#143057",
-                        "tertiary-fixed-dim": "#c6c6c7",
-                        "secondary-fixed": "#d6e3ff",
-                        "secondary-fixed-dim": "#aec7f7",
-                        "on-background": "#dfe2eb",
-                        "surface-container-high": "#262a31",
-                        "on-tertiary-fixed-variant": "#454747",
-                        "surface": "#10141a",
-                        "on-surface": "#dfe2eb",
-                        "tertiary-fixed": "#e2e2e2",
-                        "outline": "#8e9099",
-                        "on-tertiary": "#2f3131",
-                        "on-error": "#690005",
-                        "on-primary-fixed": "#351000",
-                        "inverse-surface": "#dfe2eb",
-                        "inverse-on-surface": "#2d3137",
-                        "surface-container-low": "#181c22",
-                        "primary-fixed": "#ffdbcc",
-                        "on-primary-fixed-variant": "#7a3000",
-                        "surface-variant": "#31353c",
-                        "secondary": "#aec7f7",
-                        "on-tertiary-fixed": "#1a1c1c",
-                        "surface-tint": "#ffb693",
-                        "on-tertiary-container": "#9e9f9f",
-                        "on-secondary-container": "#a0b9e8",
-                        "on-primary-container": "#F27024"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.125rem",
-                        "lg": "0.25rem",
-                        "xl": "0.5rem",
-                        "full": "0.75rem"
-                    },
-                    "fontFamily": {
-                        "headline": ["Space Grotesk"],
-                        "body": ["Inter"],
-                        "label": ["Space Grotesk"]
-                    }
+<title>Distribuidora JBV 16 | Guantes Reforzados, Impermeables y de Gym en Caracas</title>
+<meta name="description" content="Guantes reforzados $14, impermeables $14 y de gym $12. Tienda física en CC Doral Baralt, Caracas. Delivery, envíos nacionales MRW / ZOOM y pago al recibir."/>
+<meta name="theme-color" content="#011631"/>
+<link rel="icon" href="imagenes/logo.png"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@400,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    navy: { DEFAULT: "#011631", 800: "#06213f", 700: "#0c2c52" },
+                    ink: "#0a0f17",
+                    brand: { DEFAULT: "#F27024", soft: "#ff9a5c" },
+                    sky: { brand: "#4E97D1" },
+                    paper: "#f3f1ec"
                 },
-            },
+                fontFamily: {
+                    headline: ["Space Grotesk", "sans-serif"],
+                    body: ["Inter", "sans-serif"]
+                }
+            }
         }
-    </script>
+    }
+</script>
 <style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        .tactical-grid {
-            background-image: radial-gradient(rgba(68, 71, 78, 0.15) 1px, transparent 1px);
-            background-size: 24px 24px;
-        }
-        .hero-gradient {
-            background: linear-gradient(90deg, rgba(16, 20, 26, 1) 0%, rgba(16, 20, 26, 0.8) 40%, rgba(16, 20, 26, 0.4) 100%);
-        }
-        .brand-accent-blue {
-            color: #1B365D;
-        }
-        .bg-brand-accent-blue {
-            background-color: #1B365D;
-        }
-    </style>
+    html { scroll-behavior: smooth; }
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    .icon-fill { font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    /* Panel claro para que los guantes negros resalten */
+    .product-well {
+        background:
+            radial-gradient(ellipse at 50% 60%, rgba(0,0,0,0.10) 0%, transparent 55%),
+            linear-gradient(160deg, #ffffff 0%, #ebe8e1 100%);
+    }
+    .hero-arc {
+        position: absolute; border-radius: 9999px; border-style: solid; border-color: transparent;
+        pointer-events: none;
+    }
+    .reveal { opacity: 0; transform: translateY(16px); transition: opacity .6s ease, transform .6s ease; }
+    .reveal.is-visible { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) {
+        .reveal { opacity: 1; transform: none; transition: none; }
+        html { scroll-behavior: auto; }
+    }
+</style>
 </head>
-<body class="bg-background text-on-surface font-body tactical-grid selection:bg-on-primary-container selection:text-white">
-<!-- TopNavBar: Modern & Minimalist Redesign -->
-<nav class="fixed top-0 w-full z-50 bg-background/60 backdrop-blur-xl border-b border-white/5">
-<div class="flex justify-between items-center px-8 max-w-7xl mx-auto" style="height:80px;">
-<div class="flex items-center h-full"><img alt="Distribuidora JBV 16 Logo" class="h-full w-auto object-contain py-1" src="imagenes/logo.png"/></div>
-<div class="hidden md:flex items-center space-x-12">
-<a class="text-xs font-label font-bold uppercase tracking-[0.2em] text-[#F27024] hover:text-white transition-colors" href="#equipment">Equipamiento</a>
-<a class="text-xs font-label font-bold uppercase tracking-[0.2em] text-on-surface-variant hover:text-white transition-colors" href="#equipment">Catálogo</a>
-<a class="text-xs font-label font-bold uppercase tracking-[0.2em] text-on-surface-variant hover:text-white transition-colors" href="https://wa.me/584242200454">Contacto</a>
-</div>
-<a class="px-6 py-2 border border-[#F27024]/30 hover:bg-[#F27024] hover:text-white text-[#F27024] font-headline font-bold uppercase text-[10px] tracking-widest transition-all duration-300" href="https://wa.me/584242200454">
-            PEDIR AHORA
+<body class="bg-ink text-slate-200 font-body antialiased">
+
+<!-- Barra de navegación -->
+<nav class="fixed top-0 inset-x-0 z-50 bg-navy/90 backdrop-blur-xl border-b border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 h-16 md:h-20 flex items-center justify-between gap-4">
+        <a href="#inicio" class="flex items-center h-full shrink-0" aria-label="Inicio">
+            <img alt="Distribuidora JBV 16" class="h-full w-auto py-1" src="imagenes/logo.png"/>
         </a>
-</div>
-</nav>
-<!-- Hero Section -->
-<section class="relative min-h-[800px] flex items-center pt-20 overflow-hidden">
-<div class="absolute inset-0 z-0">
-<img alt="Fondo Táctico" class="w-full h-full object-cover scale-110 blur-[2px]" src="imagenes/guantes-reforzados.png"/>
-<div class="absolute inset-0 hero-gradient z-10"></div>
-</div>
-<div class="relative z-20 max-w-7xl mx-auto px-6 w-full grid grid-cols-1 md:grid-cols-2 gap-12">
-<div class="flex flex-col justify-center space-y-8">
-<div class="inline-flex items-center space-x-2 bg-surface-container-high px-3 py-1 w-fit border-l-2 border-[#F27024]">
-<span class="w-2 h-2 bg-[#F27024] animate-pulse"></span>
-<span class="text-[10px] font-label font-bold tracking-[0.2em] uppercase text-on-surface-variant">Equipamiento de Servicio Activo</span>
-</div>
-<h1 class="text-5xl md:text-7xl font-headline font-bold tracking-tighter leading-[0.9] text-white drop-shadow-2xl">
-                Protección y Agarre en <span class="text-[#F27024] italic">Cualquier Terreno.</span>
-</h1>
-<p class="text-xl text-on-surface-variant max-w-lg leading-relaxed font-light drop-shadow-lg">
-                Guantes de Alta Resistencia. Impermeables, reforzados y para gimnasio. Pruébatelos en tu zona sin compromiso.
-            </p>
-<div class="flex flex-col sm:flex-row gap-4">
-<a class="bg-[#F27024] text-white px-8 py-5 font-headline font-bold uppercase tracking-widest text-sm flex items-center justify-center space-x-3 hover:brightness-110 transition-all group" href="https://wa.me/584242200454">
-<span>Pedir por WhatsApp Ahora</span>
-<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">send</span>
-</a>
-<a class="border border-outline-variant text-white px-8 py-5 font-headline font-bold uppercase tracking-widest text-sm flex items-center justify-center hover:bg-white/5 transition-all backdrop-blur-sm" href="#equipment">
-                    Explorar Catálogo
-                </a>
-</div>
-</div>
-<div class="hidden md:flex items-center justify-end">
-<div class="relative">
-<div class="absolute -inset-4 border border-[#F27024]/20 translate-x-4 translate-y-4"></div>
-<div class="bg-surface-container-low/40 backdrop-blur-md p-2 relative border border-white/10">
-<img alt="Foto técnica del producto" class="w-80 h-auto object-contain drop-shadow-[0_20px_50px_rgba(242,112,36,0.3)] hover:scale-105 transition-all duration-700" src="imagenes/guantes-reforzados.png"/>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Product Catalog -->
-<section class="py-24 px-6 bg-surface-container-lowest" id="equipment">
-<div class="max-w-7xl mx-auto">
-<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
-<div class="space-y-4">
-<h2 class="text-4xl font-headline font-bold uppercase tracking-tighter">Inventario Táctico</h2>
-<div class="h-1 w-24 bg-[#F27024]"></div>
-</div>
-<p class="text-on-surface-variant max-w-sm font-label text-sm uppercase tracking-wider border-l-2 border-[#1B365D] pl-4">
-                Equipamiento de grado profesional diseñado para durabilidad extrema y precisión operativa.
-            </p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<!-- Product 1: Guantes Impermeables -->
-<div class="group relative bg-surface-container flex flex-col overflow-hidden border border-white/5">
-<div class="aspect-[4/5] overflow-hidden bg-white/5">
-<img alt="Guantes Impermeables" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-700" src="imagenes/guantes-impermeable.png"/>
-<div class="absolute top-4 right-4 bg-[#F27024] text-white px-3 py-1 font-headline font-bold text-lg">
-                        $14 <span class="text-[10px] font-label align-top">BCV</span>
-</div>
-</div>
-<div class="p-8 space-y-6 flex-1 flex flex-col justify-between border-t border-white/5">
-<div class="space-y-3">
-<h3 class="text-2xl font-headline font-bold uppercase tracking-tight">Guantes Impermeables</h3>
-<ul class="space-y-2">
-<li class="flex items-center text-sm text-on-surface-variant">
-<span class="material-symbols-outlined text-[#F27024] text-lg mr-2">check_circle</span>
-                                Táctil móvil &amp; 100% impermeables
-                            </li>
-<li class="flex items-center text-sm text-on-surface-variant">
-<span class="material-symbols-outlined text-[#F27024] text-lg mr-2">check_circle</span>
-                                Aislamiento térmico extremo
-                            </li>
-<li class="flex items-center text-sm text-on-surface-variant">
-<span class="material-symbols-outlined text-[#F27024] text-lg mr-2">check_circle</span>
-                                Cierre de cremallera técnica
-                            </li>
-</ul>
-</div>
-<a class="w-full py-4 border-2 border-[#F27024] text-[#F27024] font-headline font-bold uppercase tracking-widest text-center text-sm hover:bg-[#F27024] hover:text-white transition-all" href="https://wa.me/584242200454">
-                        Comprar este modelo
-                    </a>
-</div>
-</div>
-<!-- Product 2: Guantes Reforzados -->
-<div class="group relative bg-surface-container-high flex flex-col overflow-hidden md:-translate-y-4 border border-[#F27024]/20 shadow-2xl shadow-[#F27024]/5">
-<div class="aspect-[4/5] overflow-hidden bg-white/5">
-<img alt="Guantes Reforzados" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-700" src="imagenes/guantes-reforzados.png"/>
-<div class="absolute top-4 right-4 bg-[#F27024] text-white px-3 py-1 font-headline font-bold text-lg">
-                        $14 <span class="text-[10px] font-label align-top">BCV</span>
-</div>
-</div>
-<div class="p-8 space-y-6 flex-1 flex flex-col justify-between border-t border-white/5">
-<div class="space-y-3">
-<h3 class="text-2xl font-headline font-bold uppercase tracking-tight">Guantes Reforzados</h3>
-<ul class="space-y-2">
-<li class="flex items-center text-sm text-on-surface-variant">
-<span class="material-symbols-outlined text-[#F27024] text-lg mr-2">check_circle</span>
-                                Protección integral (Nudillos)
-                            </li>
-<li class="flex items-center text-sm text-on-surface-variant">
-<span class="material-symbols-outlined text-[#F27024] text-lg mr-2">check_circle</span>
-                                Diseño táctico &amp; Antirresbalante
-                            </li>
-<li class="flex items-center text-sm text-on-surface-variant">
-<span class="material-symbols-outlined text-[#F27024] text-lg mr-2">check_circle</span>
-                                Muñequera técnica ajustable
-                            </li>
-</ul>
-</div>
-<a class="w-full py-4 bg-[#F27024] text-white font-headline font-bold uppercase tracking-widest text-center text-sm hover:brightness-110 transition-all shadow-lg shadow-[#F27024]/20" href="https://wa.me/584242200454">
-                        Comprar este modelo
-                    </a>
-</div>
-<div class="absolute top-0 left-0 bg-[#F27024] text-[10px] font-label font-black text-white px-4 py-1 uppercase tracking-widest">Más Buscado</div>
-</div>
-<!-- Product 3: Guantes Gym -->
-<div class="group relative bg-surface-container flex flex-col overflow-hidden border border-white/5">
-<div class="aspect-[4/5] overflow-hidden bg-white/5">
-<img alt="Guantes Gym" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-700" src="imagenes/guantes-gym.png"/>
-<div class="absolute top-4 right-4 bg-[#F27024] text-white px-3 py-1 font-headline font-bold text-lg">
-                        $12 <span class="text-[10px] font-label align-top">BCV</span>
-</div>
-</div>
-<div class="p-8 space-y-6 flex-1 flex flex-col justify-between border-t border-white/5">
-<div class="space-y-3">
-<h3 class="text-2xl font-headline font-bold uppercase tracking-tight">Guantes Gym</h3>
-<ul class="space-y-2">
-<li class="flex items-center text-sm text-on-surface-variant">
-<span class="material-symbols-outlined text-[#F27024] text-lg mr-2">check_circle</span>
-                                Palma antideslizante técnica
-                            </li>
-<li class="flex items-center text-sm text-on-surface-variant">
-<span class="material-symbols-outlined text-[#F27024] text-lg mr-2">check_circle</span>
-                                Transpirabilidad máxima
-                            </li>
-<li class="flex items-center text-sm text-on-surface-variant">
-<span class="material-symbols-outlined text-[#F27024] text-lg mr-2">check_circle</span>
-                                Soporte extra para pesas
-                            </li>
-</ul>
-</div>
-<a class="w-full py-4 border-2 border-[#F27024] text-[#F27024] font-headline font-bold uppercase tracking-widest text-center text-sm hover:bg-[#F27024] hover:text-white transition-all" href="https://wa.me/584242200454">
-                        Comprar este modelo
-                    </a>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Benefits Section -->
-<section class="py-24 bg-surface-dim relative border-y border-white/5">
-<div class="max-w-7xl mx-auto px-6">
-<div class="grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
-<div class="space-y-4 group">
-<div class="w-16 h-16 mx-auto bg-[#1B365D]/20 flex items-center justify-center border border-white/5 group-hover:border-[#F27024] transition-colors">
-<span class="material-symbols-outlined text-[#F27024] text-3xl">moped</span>
-</div>
-<div>
-<h4 class="font-headline font-bold uppercase text-sm tracking-widest">Delivery Gratis</h4>
-<p class="text-xs text-on-surface-variant mt-1 uppercase">Zonas Seleccionadas</p>
-</div>
-</div>
-<div class="space-y-4 group">
-<div class="w-16 h-16 mx-auto bg-[#1B365D]/20 flex items-center justify-center border border-white/5 group-hover:border-[#F27024] transition-colors">
-<span class="material-symbols-outlined text-[#F27024] text-3xl">handshake</span>
-</div>
-<div>
-<h4 class="font-headline font-bold uppercase text-sm tracking-widest">Entregas Personales</h4>
-<p class="text-xs text-on-surface-variant mt-1 uppercase">PZA VZLA / El Paraíso</p>
-</div>
-</div>
-<div class="space-y-4 group">
-<div class="w-16 h-16 mx-auto bg-[#1B365D]/20 flex items-center justify-center border border-white/5 group-hover:border-[#F27024] transition-colors">
-<span class="material-symbols-outlined text-[#F27024] text-3xl">local_shipping</span>
-</div>
-<div>
-<h4 class="font-headline font-bold uppercase text-sm tracking-widest">Envíos Nacionales</h4>
-<p class="text-xs text-on-surface-variant mt-1 uppercase">MRW / ZOOM</p>
-</div>
-</div>
-<div class="space-y-4 group">
-<div class="w-16 h-16 mx-auto bg-[#1B365D]/20 flex items-center justify-center border border-white/5 group-hover:border-[#F27024] transition-colors">
-<span class="material-symbols-outlined text-[#F27024] text-3xl">verified_user</span>
-</div>
-<div>
-<h4 class="font-headline font-bold uppercase text-sm tracking-widest">Pagas al recibir</h4>
-<p class="text-xs text-on-surface-variant mt-1 uppercase">Seguridad Garantizada</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Trust Section (Store & Photo) -->
-<section class="py-24 px-6 overflow-hidden">
-<div class="max-w-7xl mx-auto">
-<div class="bg-surface-container p-1 md:p-2 border border-white/5">
-<div class="grid grid-cols-1 md:grid-cols-2">
-<div class="p-12 space-y-8">
-<div class="space-y-4">
-<span class="text-[#F27024] font-label font-bold text-xs uppercase tracking-[0.3em]">Base de Operaciones</span>
-<h2 class="text-4xl md:text-5xl font-headline font-bold uppercase tracking-tighter leading-none">Visítanos en nuestra Tienda Física</h2>
-</div>
-<div class="flex items-start space-x-4">
-<span class="material-symbols-outlined text-[#F27024] mt-1">location_on</span>
-<div class="space-y-2">
-<p class="text-xl font-headline font-bold uppercase">Caracas, Distrito Capital</p>
-<p class="text-on-surface-variant font-light max-w-xs">CC Doral Baralt, Planta Principal, Quinta Crespo.</p>
-<p class="text-slate-400 font-light max-w-xs text-sm pt-2">
-    Para recibir indicaciones exactas sobre cómo llegar, no dudes en escribirnos a nuestro WhatsApp: <br/>
-    <a href="https://wa.me/584242200454" class="text-[#25D366] font-bold hover:brightness-125 transition-all">
-        0424-2200454
-    </a>
-</p>
-</div>
-</div>
-<div class="flex items-center space-x-4">
-<div class="h-px flex-1 bg-white/5"></div>
-<span class="text-[10px] font-label text-on-surface-variant uppercase tracking-widest">Establecido en 2018</span>
-</div>
-<div class="pt-4 flex space-x-6">
-<div class="flex flex-col">
-<span class="text-on-surface-variant text-[10px] font-label uppercase">Horario</span>
-<span class="font-headline font-bold">LUN - SAB / 9:00AM - 5:30PM</span>
-</div>
-</div>
-</div>
-<div class="h-80 md:h-auto bg-[#1B365D]/10 relative min-h-[450px] overflow-hidden">
-<div class="absolute inset-0 grayscale-[20%] hover:grayscale-0 transition-all duration-700">
-<img alt="Tienda Física CC Doral Baralt" class="w-full h-full object-cover" src="imagenes/tienda.jpg"/>
-</div>
-<div class="absolute inset-0 flex items-center justify-center pointer-events-none">
-<div class="relative w-12 h-12">
-<div class="absolute inset-0 bg-[#F27024] rounded-full animate-ping opacity-50"></div>
-<div class="absolute inset-2 bg-[#F27024] rounded-full flex items-center justify-center">
-<span class="material-symbols-outlined text-white text-sm" style="font-variation-settings: 'FILL' 1;">location_on</span>
-</div>
-</div>
-</div>
-<div class="absolute bottom-6 right-6 bg-[#001b3d]/90 backdrop-blur-md p-4 border border-white/10 text-[10px] font-label uppercase tracking-widest text-white/90">
-                        LAT: 10.4936° N <br/> LONG: 66.9142° W
-                    </div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Footer -->
-<footer class="bg-[#001b3d] dark:bg-black w-full py-12 px-8 border-t border-white/5">
-<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
-<div class="space-y-6">
-<div class="text-lg font-bold text-slate-200 font-headline uppercase tracking-tighter">Distribuidora JBV 16</div>
-<p class="text-slate-500 font-body text-sm leading-relaxed">Suministro táctico de alta precisión para personal de seguridad, deportistas y aventureros urbanos.</p>
-<div class="flex space-x-4">
-<a class="text-slate-500 hover:text-white transition-colors" href="https://wa.me/584242200454">
-<span class="material-symbols-outlined">alternate_email</span>
-</a>
-<a class="text-slate-500 hover:text-white transition-colors" href="https://wa.me/584242200454">
-<span class="material-symbols-outlined">forum</span>
-</a>
-</div>
-</div>
-<div class="space-y-6">
-<h5 class="text-[#F27024] font-headline font-bold uppercase text-xs tracking-widest">Centro de Operaciones</h5>
-<div class="space-y-4 font-body text-sm text-slate-500">
-<a class="flex items-center hover:text-slate-300 transition-all" href="https://wa.me/584242200454">
-<span class="material-symbols-outlined text-sm mr-2">phone</span>
-                    WhatsApp 0424-2200454
-                </a>
-<a class="flex items-center hover:text-slate-300 transition-all" href="https://www.instagram.com/distribuidorajb18/">
-<span class="material-symbols-outlined text-sm mr-2">photo_camera</span>
-                    Instagram @distribuidorajbv18
-                </a>
-</div>
-</div>
-<div class="space-y-6">
-<h5 class="text-[#F27024] font-headline font-bold uppercase text-xs tracking-widest">Legal y Privacidad</h5>
-<div class="flex flex-col space-y-4 font-body text-sm text-slate-500">
-<a class="hover:underline decoration-[#F27024] transition-all" href="#">Política de Privacidad</a>
-<a class="hover:underline decoration-[#F27024] transition-all" href="#">Términos de Servicio</a>
-</div>
-</div>
-</div>
-<div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
-<p class="text-slate-500 text-xs font-label tracking-wide uppercase">© 2024 Distribuidora JBV 16. Logística de Precisión Táctica.</p>
-<div class="flex items-center space-x-1">
-<div class="w-1 h-1 bg-[#F27024] rounded-full"></div>
-<div class="w-1 h-1 bg-[#F27024]/60 rounded-full"></div>
-<div class="w-1 h-1 bg-[#F27024]/30 rounded-full"></div>
-</div>
-</div>
-</footer>
-<!-- Sticky WhatsApp Button -->
-<a class="fixed bottom-8 right-8 z-[100] group" href="https://wa.me/584242200454">
-<div class="absolute inset-0 bg-[#25D366] rounded-full blur-lg opacity-40 group-hover:opacity-60 transition-opacity"></div>
-<div class="relative bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-9 h-9 fill-white"><path d="M16 2C8.268 2 2 8.268 2 16c0 2.47.668 4.785 1.832 6.77L2 30l7.43-1.796A13.93 13.93 0 0 0 16 30c7.732 0 14-6.268 14-14S23.732 2 16 2zm0 25.5a11.44 11.44 0 0 1-5.823-1.594l-.418-.248-4.33 1.046 1.085-4.217-.272-.432A11.46 11.46 0 0 1 4.5 16C4.5 9.596 9.596 4.5 16 4.5S27.5 9.596 27.5 16 22.404 27.5 16 27.5zm6.29-8.61c-.345-.172-2.04-1.006-2.356-1.12-.316-.115-.546-.172-.776.172-.23.345-.89 1.12-1.09 1.35-.2.23-.4.258-.745.086-.345-.172-1.456-.537-2.773-1.71-1.025-.914-1.717-2.042-1.918-2.387-.2-.345-.021-.531.15-.703.155-.154.345-.402.517-.603.172-.2.23-.345.345-.575.115-.23.057-.431-.029-.603-.086-.172-.776-1.87-1.063-2.56-.28-.672-.564-.58-.776-.59l-.66-.011c-.23 0-.603.086-.919.431-.316.345-1.206 1.178-1.206 2.873s1.235 3.332 1.407 3.562c.172.23 2.43 3.71 5.888 5.203.823.355 1.465.567 1.966.726.826.263 1.578.226 2.172.137.662-.099 2.04-.834 2.328-1.638.287-.805.287-1.494.2-1.638-.085-.143-.315-.23-.66-.402z"/></svg>
-</div>
-<div class="absolute bottom-full right-0 mb-4 bg-surface-container-high px-4 py-2 text-[10px] font-label font-bold uppercase tracking-widest text-white border border-white/10 opacity-0 group-hover:opacity-100 transition-all pointer-events-none whitespace-nowrap">
-        Chat en Directo
+        <div class="hidden md:flex items-center gap-10 text-sm font-medium text-slate-300">
+            <a class="hover:text-white transition-colors" href="#catalogo">Catálogo</a>
+            <a class="hover:text-white transition-colors" href="#como-comprar">Cómo comprar</a>
+            <a class="hover:text-white transition-colors" href="#tienda">Tienda física</a>
+        </div>
+        <a class="inline-flex items-center gap-2 rounded-lg bg-brand px-4 py-2.5 text-sm font-semibold text-white hover:bg-brand-soft transition-colors" href="https://wa.me/584242200454?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20guantes">
+            <span class="material-symbols-outlined text-lg">chat</span>
+            <span>Pedir ahora</span>
+        </a>
     </div>
+</nav>
+
+<!-- Hero -->
+<header id="inicio" class="relative overflow-hidden bg-navy pt-28 md:pt-36 pb-20 md:pb-28">
+    <!-- Arcos inspirados en el logo -->
+    <div class="hero-arc w-[720px] h-[720px] -right-40 -top-24 border-[28px] border-t-sky-brand/30 border-r-sky-brand/20"></div>
+    <div class="hero-arc w-[560px] h-[560px] -right-16 top-10 border-[10px] border-b-white/10 border-l-white/10"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-12 items-center">
+        <div class="space-y-7">
+            <span class="inline-flex items-center gap-2 rounded-full bg-white/5 border border-white/10 px-3 py-1 text-xs font-medium text-slate-300">
+                <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                Tienda física en Caracas desde 2018
+            </span>
+            <h1 class="font-headline font-bold text-4xl sm:text-5xl lg:text-6xl leading-[1.05] tracking-tight text-white">
+                Guantes que aguantan<br/>
+                <span class="text-brand">lo que tú le exijas.</span>
+            </h1>
+            <p class="text-lg text-slate-300 max-w-lg leading-relaxed">
+                Reforzados para moto y trabajo, impermeables para la lluvia y de gym para entrenar.
+                Pruébatelos al recibir y <strong class="text-white font-semibold">paga solo si te quedan</strong>.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-3">
+                <a class="inline-flex items-center justify-center gap-2 rounded-lg bg-brand px-7 py-4 font-semibold text-white shadow-lg shadow-brand/25 hover:bg-brand-soft transition-colors" href="https://wa.me/584242200454?text=Hola%2C%20quiero%20pedir%20unos%20guantes">
+                    Pedir por WhatsApp
+                    <span class="material-symbols-outlined">arrow_forward</span>
+                </a>
+                <a class="inline-flex items-center justify-center rounded-lg border border-white/15 px-7 py-4 font-semibold text-white hover:bg-white/5 transition-colors" href="#catalogo">
+                    Ver precios
+                </a>
+            </div>
+            <dl class="grid grid-cols-3 gap-4 pt-4 max-w-md">
+                <div>
+                    <dt class="text-xs text-slate-400">Desde</dt>
+                    <dd class="font-headline text-2xl font-bold text-white">$12</dd>
+                </div>
+                <div>
+                    <dt class="text-xs text-slate-400">Envíos</dt>
+                    <dd class="font-headline text-2xl font-bold text-white">Nacional</dd>
+                </div>
+                <div>
+                    <dt class="text-xs text-slate-400">Pago</dt>
+                    <dd class="font-headline text-2xl font-bold text-white">Al recibir</dd>
+                </div>
+            </dl>
+        </div>
+        <div class="relative">
+            <div class="product-well rounded-3xl aspect-square max-w-md mx-auto md:ml-auto flex items-center justify-center p-8 shadow-2xl shadow-black/40">
+                <img alt="Guantes reforzados tácticos" class="w-full h-full object-contain drop-shadow-[0_25px_25px_rgba(0,0,0,0.35)]" src="imagenes/guantes-reforzados.png"/>
+            </div>
+            <div class="absolute -bottom-5 left-4 md:left-auto md:-left-2 rounded-xl bg-white text-navy px-5 py-3 shadow-xl">
+                <p class="text-xs font-medium text-slate-500">Más vendido</p>
+                <p class="font-headline font-bold text-lg">Reforzados · $14</p>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Barra de beneficios -->
+<section class="bg-navy-800 border-y border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-8 grid grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-brand text-3xl">verified_user</span>
+            <div><p class="font-semibold text-white text-sm">Pagas al recibir</p><p class="text-xs text-slate-400">Sin riesgos</p></div>
+        </div>
+        <div class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-brand text-3xl">moped</span>
+            <div><p class="font-semibold text-white text-sm">Delivery gratis</p><p class="text-xs text-slate-400">Zonas seleccionadas</p></div>
+        </div>
+        <div class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-brand text-3xl">handshake</span>
+            <div><p class="font-semibold text-white text-sm">Entregas personales</p><p class="text-xs text-slate-400">Pza. Venezuela / El Paraíso</p></div>
+        </div>
+        <div class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-brand text-3xl">local_shipping</span>
+            <div><p class="font-semibold text-white text-sm">Envíos nacionales</p><p class="text-xs text-slate-400">MRW / ZOOM</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- Catálogo -->
+<section id="catalogo" class="py-20 md:py-28 px-4 sm:px-6 scroll-mt-16">
+    <div class="max-w-7xl mx-auto">
+        <div class="max-w-2xl mb-12 md:mb-16">
+            <p class="text-brand font-semibold text-sm mb-3">Catálogo y precios</p>
+            <h2 class="font-headline font-bold text-3xl md:text-5xl tracking-tight text-white">Elige tu par</h2>
+            <p class="mt-4 text-slate-400">Precios en dólares, también puedes pagar en bolívares a tasa BCV del día.</p>
+        </div>
+
+        <!-- PRECIOS: para cambiarlos, edita el número dentro de cada <span data-price> -->
+        <div class="grid gap-6 md:grid-cols-3">
+
+            <!-- Guantes Reforzados -->
+            <article class="reveal group flex flex-col rounded-2xl bg-navy-800 ring-2 ring-brand overflow-hidden">
+                <div class="product-well relative aspect-[4/3] flex items-center justify-center p-6">
+                    <span class="absolute top-4 left-4 rounded-full bg-brand px-3 py-1 text-xs font-semibold text-white">Más vendido</span>
+                    <img alt="Guantes Reforzados" loading="lazy" class="h-full w-auto object-contain group-hover:scale-105 transition-transform duration-500" src="imagenes/guantes-reforzados.png"/>
+                </div>
+                <div class="flex flex-1 flex-col p-6 md:p-7">
+                    <div class="flex items-start justify-between gap-4">
+                        <div>
+                            <h3 class="font-headline font-bold text-xl text-white">Guantes Reforzados</h3>
+                            <p class="text-sm text-slate-400">Moto, trabajo y uso táctico</p>
+                        </div>
+                        <p class="text-right shrink-0">
+                            <span class="font-headline font-bold text-3xl text-white">$<span data-price>14</span></span>
+                            <span class="block text-[11px] text-slate-400">o Bs. tasa BCV</span>
+                        </p>
+                    </div>
+                    <ul class="mt-6 space-y-2.5 text-sm text-slate-300 flex-1">
+                        <li class="flex gap-2"><span class="material-symbols-outlined icon-fill text-brand text-lg">check_circle</span>Protección rígida en nudillos</li>
+                        <li class="flex gap-2"><span class="material-symbols-outlined icon-fill text-brand text-lg">check_circle</span>Palma antirresbalante</li>
+                        <li class="flex gap-2"><span class="material-symbols-outlined icon-fill text-brand text-lg">check_circle</span>Muñequera ajustable</li>
+                    </ul>
+                    <a class="mt-7 inline-flex items-center justify-center gap-2 rounded-lg bg-brand py-3.5 font-semibold text-white hover:bg-brand-soft transition-colors" href="https://wa.me/584242200454?text=Hola%2C%20quiero%20los%20Guantes%20Reforzados%20(%2414)">
+                        Pedir este modelo
+                        <span class="material-symbols-outlined text-lg">arrow_forward</span>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Guantes Impermeables -->
+            <article class="reveal group flex flex-col rounded-2xl bg-navy-800 ring-1 ring-white/10 overflow-hidden">
+                <div class="product-well relative aspect-[4/3] flex items-center justify-center p-6">
+                    <img alt="Guantes Impermeables" loading="lazy" class="h-full w-auto object-contain group-hover:scale-105 transition-transform duration-500" src="imagenes/guantes-impermeable.png"/>
+                </div>
+                <div class="flex flex-1 flex-col p-6 md:p-7">
+                    <div class="flex items-start justify-between gap-4">
+                        <div>
+                            <h3 class="font-headline font-bold text-xl text-white">Guantes Impermeables</h3>
+                            <p class="text-sm text-slate-400">Lluvia, frío y moto</p>
+                        </div>
+                        <p class="text-right shrink-0">
+                            <span class="font-headline font-bold text-3xl text-white">$<span data-price>14</span></span>
+                            <span class="block text-[11px] text-slate-400">o Bs. tasa BCV</span>
+                        </p>
+                    </div>
+                    <ul class="mt-6 space-y-2.5 text-sm text-slate-300 flex-1">
+                        <li class="flex gap-2"><span class="material-symbols-outlined icon-fill text-brand text-lg">check_circle</span>100% impermeables</li>
+                        <li class="flex gap-2"><span class="material-symbols-outlined icon-fill text-brand text-lg">check_circle</span>Táctiles: usa el celular sin quitártelos</li>
+                        <li class="flex gap-2"><span class="material-symbols-outlined icon-fill text-brand text-lg">check_circle</span>Aislamiento térmico y cierre de cremallera</li>
+                    </ul>
+                    <a class="mt-7 inline-flex items-center justify-center gap-2 rounded-lg border border-white/15 py-3.5 font-semibold text-white hover:bg-brand hover:border-brand transition-colors" href="https://wa.me/584242200454?text=Hola%2C%20quiero%20los%20Guantes%20Impermeables%20(%2414)">
+                        Pedir este modelo
+                        <span class="material-symbols-outlined text-lg">arrow_forward</span>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Guantes Gym -->
+            <article class="reveal group flex flex-col rounded-2xl bg-navy-800 ring-1 ring-white/10 overflow-hidden">
+                <div class="product-well relative aspect-[4/3] flex items-center justify-center p-6">
+                    <span class="absolute top-4 left-4 rounded-full bg-navy px-3 py-1 text-xs font-semibold text-white">Mejor precio</span>
+                    <img alt="Guantes de Gym" loading="lazy" class="h-full w-auto object-contain group-hover:scale-105 transition-transform duration-500" src="imagenes/guantes-gym.png"/>
+                </div>
+                <div class="flex flex-1 flex-col p-6 md:p-7">
+                    <div class="flex items-start justify-between gap-4">
+                        <div>
+                            <h3 class="font-headline font-bold text-xl text-white">Guantes de Gym</h3>
+                            <p class="text-sm text-slate-400">Pesas, crossfit y calistenia</p>
+                        </div>
+                        <p class="text-right shrink-0">
+                            <span class="font-headline font-bold text-3xl text-white">$<span data-price>12</span></span>
+                            <span class="block text-[11px] text-slate-400">o Bs. tasa BCV</span>
+                        </p>
+                    </div>
+                    <ul class="mt-6 space-y-2.5 text-sm text-slate-300 flex-1">
+                        <li class="flex gap-2"><span class="material-symbols-outlined icon-fill text-brand text-lg">check_circle</span>Palma antideslizante</li>
+                        <li class="flex gap-2"><span class="material-symbols-outlined icon-fill text-brand text-lg">check_circle</span>Tela transpirable</li>
+                        <li class="flex gap-2"><span class="material-symbols-outlined icon-fill text-brand text-lg">check_circle</span>Soporte de muñeca para pesas</li>
+                    </ul>
+                    <a class="mt-7 inline-flex items-center justify-center gap-2 rounded-lg border border-white/15 py-3.5 font-semibold text-white hover:bg-brand hover:border-brand transition-colors" href="https://wa.me/584242200454?text=Hola%2C%20quiero%20los%20Guantes%20de%20Gym%20(%2412)">
+                        Pedir este modelo
+                        <span class="material-symbols-outlined text-lg">arrow_forward</span>
+                    </a>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- Cómo comprar -->
+<section id="como-comprar" class="py-20 md:py-24 px-4 sm:px-6 bg-paper text-navy scroll-mt-16">
+    <div class="max-w-7xl mx-auto">
+        <div class="max-w-2xl mb-12">
+            <p class="text-brand font-semibold text-sm mb-3">Fácil y seguro</p>
+            <h2 class="font-headline font-bold text-3xl md:text-5xl tracking-tight">Cómo comprar</h2>
+        </div>
+        <ol class="grid gap-6 md:grid-cols-3">
+            <li class="reveal rounded-2xl bg-white p-7 shadow-sm">
+                <span class="font-headline text-5xl font-bold text-brand">1</span>
+                <h3 class="mt-4 font-headline font-bold text-xl">Escríbenos</h3>
+                <p class="mt-2 text-slate-600">Toca “Pedir este modelo” y dinos tu talla y tu zona por WhatsApp.</p>
+            </li>
+            <li class="reveal rounded-2xl bg-white p-7 shadow-sm">
+                <span class="font-headline text-5xl font-bold text-brand">2</span>
+                <h3 class="mt-4 font-headline font-bold text-xl">Coordinamos la entrega</h3>
+                <p class="mt-2 text-slate-600">Delivery en Caracas, entrega personal o envío nacional por MRW / ZOOM.</p>
+            </li>
+            <li class="reveal rounded-2xl bg-white p-7 shadow-sm">
+                <span class="font-headline text-5xl font-bold text-brand">3</span>
+                <h3 class="mt-4 font-headline font-bold text-xl">Pruébatelos y paga</h3>
+                <p class="mt-2 text-slate-600">Revisa que te queden bien y pagas al recibir, en dólares o bolívares.</p>
+            </li>
+        </ol>
+    </div>
+</section>
+
+<!-- Tienda física -->
+<section id="tienda" class="py-20 md:py-28 px-4 sm:px-6 scroll-mt-16">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 rounded-3xl overflow-hidden bg-navy-800 ring-1 ring-white/10">
+        <div class="p-8 md:p-12 space-y-8">
+            <div>
+                <p class="text-brand font-semibold text-sm mb-3">Tienda física</p>
+                <h2 class="font-headline font-bold text-3xl md:text-4xl tracking-tight text-white">Visítanos y pruébatelos en persona</h2>
+            </div>
+            <div class="space-y-5">
+                <div class="flex gap-4">
+                    <span class="material-symbols-outlined text-brand">location_on</span>
+                    <div>
+                        <p class="font-semibold text-white">CC Doral Baralt, Planta Principal</p>
+                        <p class="text-slate-400 text-sm">Quinta Crespo, Caracas, Distrito Capital</p>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <span class="material-symbols-outlined text-brand">schedule</span>
+                    <div>
+                        <p class="font-semibold text-white">Lunes a sábado</p>
+                        <p class="text-slate-400 text-sm">9:00 a.m. – 5:30 p.m.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <span class="material-symbols-outlined text-brand">videocam</span>
+                    <div>
+                        <p class="font-semibold text-white">¿Primera vez que vienes?</p>
+                        <p class="text-slate-400 text-sm">Escríbenos al <a href="https://wa.me/584242200454?text=Hola%2C%20%C2%BFme%20pueden%20enviar%20el%20video%20de%20c%C3%B3mo%20llegar%20a%20la%20tienda%3F" class="text-[#25D366] font-semibold hover:underline">0424-2200454</a> y te enviamos un video corto que te muestra paso a paso cómo llegar a nuestro local dentro del centro comercial.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="inline-flex items-center gap-2 rounded-lg bg-white px-6 py-3.5 font-semibold text-navy hover:bg-paper transition-colors" href="https://www.google.com/maps/search/?api=1&amp;query=CC+Doral+Baralt+Quinta+Crespo+Caracas" target="_blank" rel="noopener">
+                <span class="material-symbols-outlined">map</span>
+                Abrir en Google Maps
+            </a>
+        </div>
+        <div class="relative min-h-[320px] md:min-h-[480px]">
+            <img alt="Tienda física en CC Doral Baralt" loading="lazy" class="absolute inset-0 w-full h-full object-cover" src="imagenes/tienda.jpg"/>
+        </div>
+    </div>
+</section>
+
+<!-- Pie de página -->
+<footer class="bg-navy border-t border-white/5 px-4 sm:px-6 py-12">
+    <div class="max-w-7xl mx-auto grid gap-10 md:grid-cols-3">
+        <div class="space-y-4">
+            <img alt="Distribuidora JBV 16" class="h-16 w-auto" src="imagenes/logo.png"/>
+            <p class="text-slate-400 text-sm leading-relaxed max-w-xs">Guantes de alta resistencia para motorizados, trabajadores, deportistas y aventureros urbanos.</p>
+        </div>
+        <div class="space-y-4">
+            <h5 class="text-white font-semibold text-sm">Contacto</h5>
+            <a class="flex items-center gap-2 text-sm text-slate-400 hover:text-white transition-colors" href="https://wa.me/584242200454">
+                <span class="material-symbols-outlined text-base">phone</span> WhatsApp 0424-2200454
+            </a>
+            <a class="flex items-center gap-2 text-sm text-slate-400 hover:text-white transition-colors" href="https://www.instagram.com/distribuidorajbv18/" target="_blank" rel="noopener">
+                <span class="material-symbols-outlined text-base">photo_camera</span> Instagram @distribuidorajbv18
+            </a>
+        </div>
+        <div class="space-y-4">
+            <h5 class="text-white font-semibold text-sm">Navegación</h5>
+            <a class="block text-sm text-slate-400 hover:text-white transition-colors" href="#catalogo">Catálogo y precios</a>
+            <a class="block text-sm text-slate-400 hover:text-white transition-colors" href="#como-comprar">Cómo comprar</a>
+            <a class="block text-sm text-slate-400 hover:text-white transition-colors" href="#tienda">Tienda física</a>
+        </div>
+    </div>
+    <p class="max-w-7xl mx-auto mt-12 pt-6 border-t border-white/5 text-xs text-slate-500">© <span id="year">2026</span> Distribuidora JBV 16. Caracas, Venezuela.</p>
+</footer>
+
+<!-- Botón flotante de WhatsApp -->
+<a class="fixed bottom-5 right-5 md:bottom-8 md:right-8 z-[100] flex items-center justify-center w-14 h-14 md:w-16 md:h-16 rounded-full bg-[#25D366] shadow-xl shadow-black/30 hover:scale-110 active:scale-95 transition-transform" href="https://wa.me/584242200454?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20guantes" aria-label="Escríbenos por WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-8 h-8 md:w-9 md:h-9 fill-white"><path d="M16 2C8.268 2 2 8.268 2 16c0 2.47.668 4.785 1.832 6.77L2 30l7.43-1.796A13.93 13.93 0 0 0 16 30c7.732 0 14-6.268 14-14S23.732 2 16 2zm0 25.5a11.44 11.44 0 0 1-5.823-1.594l-.418-.248-4.33 1.046 1.085-4.217-.272-.432A11.46 11.46 0 0 1 4.5 16C4.5 9.596 9.596 4.5 16 4.5S27.5 9.596 27.5 16 22.404 27.5 16 27.5zm6.29-8.61c-.345-.172-2.04-1.006-2.356-1.12-.316-.115-.546-.172-.776.172-.23.345-.89 1.12-1.09 1.35-.2.23-.4.258-.745.086-.345-.172-1.456-.537-2.773-1.71-1.025-.914-1.717-2.042-1.918-2.387-.2-.345-.021-.531.15-.703.155-.154.345-.402.517-.603.172-.2.23-.345.345-.575.115-.23.057-.431-.029-.603-.086-.172-.776-1.87-1.063-2.56-.28-.672-.564-.58-.776-.59l-.66-.011c-.23 0-.603.086-.919.431-.316.345-1.206 1.178-1.206 2.873s1.235 3.332 1.407 3.562c.172.23 2.43 3.71 5.888 5.203.823.355 1.465.567 1.966.726.826.263 1.578.226 2.172.137.662-.099 2.04-.834 2.328-1.638.287-.805.287-1.494.2-1.638-.085-.143-.315-.23-.66-.402z"/></svg>
 </a>
-</body></html>
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // Animación suave al hacer scroll
+    if ('IntersectionObserver' in window) {
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); } });
+        }, { threshold: 0.15 });
+        document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+    } else {
+        document.querySelectorAll('.reveal').forEach((el) => el.classList.add('is-visible'));
+    }
+</script>
+</body>
+</html>
